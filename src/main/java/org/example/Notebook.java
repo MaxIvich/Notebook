@@ -8,7 +8,9 @@ public class Notebook {
     String colour;
 
 
+
     public Notebook(String ram, String hdd, String os, String colour) {
+
         this.ram = ram;
         this.hdd = hdd;
         this.os = os;
