@@ -1,6 +1,7 @@
 package org.example;
 
 public class Notebook {
+    String name;
 
     String ram;
     String hdd;
@@ -8,8 +9,16 @@ public class Notebook {
     String colour;
 
 
+    public String getName() {
+        return name;
+    }
 
-    public Notebook(String ram, String hdd, String os, String colour) {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Notebook(String name  , String ram, String hdd, String os, String colour) {
+        this.name = name;
 
         this.ram = ram;
         this.hdd = hdd;
@@ -20,11 +29,13 @@ public class Notebook {
     @Override
     public String toString() {
         return "Notebook{" +
-                "ram='" + ram + '\'' +
+                "name='" + name + '\'' +
+                ", ram='" + ram + '\'' +
                 ", hdd='" + hdd + '\'' +
                 ", os='" + os + '\'' +
                 ", colour='" + colour + '\'' +
-                '}';
+                "}\n";
+
     }
 
     public void setRam(String ram) {
